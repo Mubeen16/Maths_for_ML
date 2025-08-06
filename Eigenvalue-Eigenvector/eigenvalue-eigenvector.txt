@@ -1,0 +1,56 @@
+Eigenvalues and Eigenvectors
+
+Eigenvalues and eigenvectors are fundamental concepts in linear algebra, used in various applications such as matrix diagonalization, stability analysis and data analysis (e.g., PCA). They are associated with a square matrix and provide insights into its properties.
+
+1. Eigenvalues
+Eigenvalues are unique scalar values linked to a matrix or linear transformation. They indicate how much an eigenvector gets stretched or compressed during the transformation. The eigenvector's direction remains unchanged unless the eigenvalue is negative, in which case the direction is simply reversed.
+Equation: Av = λv
+
+2. Eigenvectors
+Eigenvectors are non-zero vectors that, when multiplied by a matrix, only stretch or shrink without changing direction. 
+Equation: Av = λv
+
+Steps to Find Eigenvectors:
+Step 1: Find eigenvalues by solving det(A - λI) = 0
+Step 2: Plug λ back into (A - λI)v = 0 to find the eigenvectors
+
+Types:
+- Right Eigenvector: AV = λV
+- Left Eigenvector: VA = λV
+
+3. Eigenvectors of Square Matrices
+- 2x2 Matrix: Solve det(A - λI) = 0, then solve (A - λI)v = 0
+Example:
+Matrix A = [[1, 2], [5, 4]]
+Eigenvalues: λ = 6, -1
+Eigenvectors: [2, 5], [1, -1]
+
+- 3x3 Matrix Example:
+Matrix A = all elements 2
+Eigenvalues: λ = 0, 6
+Eigenvectors: [-1, 1, 0], [-1, 0, 1], [1, 1, 1]
+
+4. Eigenspace
+Set of all eigenvectors corresponding to all eigenvalues.
+
+5. Diagonalization
+A = XDX⁻¹ where:
+- A is original matrix
+- X is matrix of eigenvectors
+- D is diagonal matrix of eigenvalues
+- X⁻¹ is inverse of X
+
+6. Applications
+- Linear Algebra (diagonalization, matrix exponentiation)
+- Quantum Mechanics (Hamiltonian operator)
+- Vibrations and Structural Analysis (natural frequencies)
+- Statistics (covariance matrices, PCA)
+- Computer Graphics (dimensionality reduction)
+- Control Systems (system stability)
+
+7. Solved Examples
+- Matrix A = [[1, 1, 0], [0, 1, 1], [0, 0, 1]] → λ = 1 (triple)
+  Eigenvector: [1, 0, 0]
+
+- Matrix A = [[5, 0], [0, 5]] → λ = 5 (double)
+  Eigenvectors: [1, 0], [0, 1]
